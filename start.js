@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api', require('./routes/api'));
 
 app.get('/*', (req, res) => {
-  res.redirect(`https://steemconnect.cocozl.cn${req.url}`);
+  res.redirect(`https://steemconnect.wherein.mobi${req.url}`);
 });
 
 app.listen(port, () => {
